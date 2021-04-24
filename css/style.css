@@ -1,0 +1,89 @@
+/* Com esse '*' informo que quero aplicar isso para todas as tags possíveis */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    /* Altura de 100% */
+    height: 100%;
+}
+
+body {
+    color: white;
+    background: rgba(54,77,204);
+    background: linear-gradient(176deg, rgba(54,77,204,1) 0%, rgba(13,29,117,1) 100%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.avatar {
+    /* Largura 100 px */
+    width: 80px;
+    border-radius: 50px;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    /* Espessura da fonte */
+    font-weight: 100;
+    /* Tamanho da fonte */
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.profile {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    /* Essa propriedade 'justify-content' só funciona com a propriedade flex, significa - justifique esse conteudo */
+    /* O space-beetwen significa espaçamento entro eles */
+    /* O space-around significa espaçamentro ao redor deles */
+    justify-content: space-around;    
+    list-style: none;
+    margin: 20px 0;
+}
+
+.social img {
+    width: 33px;
+}
+
+.links-list {
+    list-style: none;
+}
+
+.links-list li {
+    margin: 10px 20px;
+}
+
+.links-list li a {
+    /* display block para se comportar como um bloco (div) */
+    display: block;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color:rgba(54,77,204);
+    font-weight: bold;
+    box-shadow: 0 0 20px white; 
+    font-family: 'Raleway', sans-serif; 
+}
+
+.links-list li a span {
+    color: grey;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Elementos inline não tem o comportamento de um block, logo, para torna-los block, basta colocar display:block */
+
